@@ -10,7 +10,9 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: configure
-      run: sudo apt-get install cmake g++ gdb git libsdl2-dev zlib1g-dev patchelf
+      run: |
+         sudo apt-get update
+         sudo apt-get install cmake g++ gdb git libsdl2-dev zlib1g-dev patchelf
     - name: make
       run: ./build
     - name: ls
