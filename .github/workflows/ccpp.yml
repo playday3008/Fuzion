@@ -23,7 +23,7 @@ jobs:
       run: ls
     - name: cd
       run: |
-        cd Fuzion
+        cd ..
     - name: ls
       run: ls
     - name: Archive production artifacts
