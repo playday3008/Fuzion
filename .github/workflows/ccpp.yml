@@ -24,6 +24,6 @@ jobs:
       uses: actions/upload-artifact@v1
       with:
         name: compiled
+        path: Fuzion
     - name: ls
       run: ls
-        path: Fuzion
